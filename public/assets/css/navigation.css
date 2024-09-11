@@ -1,0 +1,46 @@
+.navbar {
+  background-color: #fff;
+}
+.navbar .container-fluid img {
+  border: solid 4px #001e34;
+}
+.navbar .container-fluid .offcanvas .navbar-nav .nav-item {
+  padding-inline: 1rem;
+}
+.navbar .container-fluid .offcanvas .navbar-nav .nav-item .nav-link {
+  letter-spacing: 1px;
+  color: #001e34;
+  font-size: 15px;
+  position: relative;
+  transition: color 0.2s ease-in;
+}
+.navbar .container-fluid .offcanvas .navbar-nav .nav-item .nav-link:hover {
+  color: #1f6ca3;
+}
+.navbar .container-fluid .offcanvas .navbar-nav .nav-item .nav-link::before, .navbar .container-fluid .offcanvas .navbar-nav .nav-item .nav-link::after {
+  content: "";
+  width: 0;
+  background-color: #1f6ca3;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.2s ease-in;
+}
+.navbar .container-fluid .offcanvas .navbar-nav .nav-item .nav-link:hover::before, .navbar .container-fluid .offcanvas .navbar-nav .nav-item .nav-link:hover::after {
+  width: 100%;
+}
+.navbar .container-fluid .offcanvas .navbar-nav .nav-item button {
+  background-color: #1f6ca3;
+  transition: all 0.2s ease-in-out;
+}
+.navbar .container-fluid .offcanvas .navbar-nav .nav-item button a {
+  color: #ede9d6;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+.navbar .container-fluid .offcanvas .navbar-nav .nav-item button:hover {
+  background-color: #001e34;
+  transform: scale(1.05);
+}

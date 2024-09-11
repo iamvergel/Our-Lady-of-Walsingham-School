@@ -1,0 +1,73 @@
+$columbia-blue: #b8d8e4ff;
+$zaffre: #0c12a9ff;
+$argentinian-blue: #33a7fbff;
+$button: #1f6ca3;
+$citrine: #d5cf37ff;
+$eggshell: #ede9d6ff;
+$yellow: #fffe03ff;
+$oxford-blue: #001e34ff;
+$white: #fff;
+
+.navbar {
+  background-color: $white;
+
+  .container-fluid {
+    img {
+      border: solid 4px $oxford-blue;
+    }
+
+    .offcanvas {
+      .navbar-nav {
+        .nav-item {
+          padding-inline: 1rem;
+
+          .nav-link {
+            letter-spacing: 1px;
+            color: $oxford-blue;
+            font-size: 15px;
+            position: relative;
+            transition: color 0.2s ease-in;
+
+            &:hover {
+                color: $button;
+            }
+
+            &::before,
+            &::after {
+              content: "";
+              width: 0;
+              background-color: $button;
+              height: 3px;
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              transform: translateX(-50%);
+              transition: all 0.2s ease-in;
+            }
+
+            &:hover::before,
+            &:hover::after {
+              width: 100%;
+            }
+          }
+
+          button {
+            background-color: $button;
+            transition: all 0.2s ease-in-out;
+
+            a {
+              color: $eggshell;
+              font-size: 15px;
+              letter-spacing: 1px;
+            }
+
+            &:hover {
+              background-color: $oxford-blue;
+              transform: scale(1.05);
+            }
+          }
+        }
+      }
+    }
+  }
+}
